@@ -17,6 +17,8 @@ We will be employing the skills of basic calculation, randomization, conditional
 ## Implementation Plan
 To enable our designed function, we will be utilizing two APIs, the first one is the [Fitness Calculator](https://rapidapi.com/malaaddincelik/api/fitness-calculator), and the second is the [NutritionNix](https://www.nutritionix.com/). The first API will allow us to input user body information and return with BMI, daily calories requirement on different weight control goals, etc. The demo is as below.
 
+![This is an image](https://user-images.githubusercontent.com/112499147/201264770-7beb390b-1515-47e7-b9ae-c3f487782a90.png)
+
 The second API is a database of food. It contains the nutrition facts of 790,041 grocery goods. By searching the food, it will return facts like calories, amount of carbohydrates, dietary fibers, fat etc. We are still finalizing our search for effective nutrition APIs and we might use another one if we find it better.
 We will ask the users to input their age, gender, weight, height, exercise level, and weight control goal, then by using the Fitness Calculator API, we will check the weight control goal in the returned calories requirements. With this returned daily calories requirement, we will then randomize a choice of food in each category of carbs, fibers, proteins, and etc. The sum of calories of these categories will add up to the daily calories requirement. In this way, we will make sure the user meets weight control goals, and also has a balanced diet with all categories. 
 With consideration of allergies and dietary restrictions, we will allow users to always regenerate a new set of recommendations to meet their preference. Of course, if we have time, we can try to include restrictions in the code and let users input restrictions.
@@ -27,6 +29,7 @@ After developing the back-end, we will work on the front-end web app development
 
 ## Collaboration Plan
 In this project, we will both work on the back-end and front-end development together, but in a micro-perspective, we will assign each small specific task to each person. For specific tasks that require coding, we will complete the code independently, and then combine the works with one another after discussion. And for errors and issues that occurred, we will first look through codes from our class and search online for explanation tutorials. If the issue still remains unresolved, we will consult with professor Li for advice. For each task, we will test the codes together to make sure the program runs smoothly with no errors neglected. As for software development methodology, we will adopt agile development. Since we are a small group, we are able to guarantee real-time communication which is key to maintain frequent incremental improvements in this methodology. Through iterations that contain small increments on the codes that control the program functionality and web aesthetics, the efficiency will be improved since the team will be able to locate and fix the errors in a timely manner.
+
 ![This is an image](https://www.synopsys.com/blogs/software-security/wp-content/uploads/2017/03/agile-development.jpg)
 
 ## Risks
