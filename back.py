@@ -123,7 +123,7 @@ def all_category(cal):
         totalcal = fruitcal + vegecal + dairycal + \
             drinkcal + fishcal + graincal + meatcal
 
-    return f"Your diet plan is:\nVegetables:{vegename}\nMeat:{meatname}\nFish:{fishname}\nDairy and eggs:{dairyname}\nGrain and pulses:{grainname}\nFruit:{fruitname}\nDrink:{drinkname}\nYour calories goal is {cal}, this plan's total calories is {totalcal}"
+    return f"Your diet plan is:\nVegetables:{vegename} * 100g\nMeat:{meatname} * 100g\nFish:{fishname} * 100g\nDairy and eggs:{dairyname} * 100g\nGrain and pulses:{grainname} * 100g\nFruit:{fruitname} * 100g\nDrink:{drinkname} * 100ml\nYour calories goal is {cal}, this plan's total calories is {totalcal}"
 
 
 def main():
