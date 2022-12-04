@@ -1,0 +1,152 @@
+﻿Apple,37,fruit
+Apricot,34,fruit
+Avocado,134,fruit
+Banana,51,fruit
+Blackberries,21,fruit
+Blackcurrant,24,fruit
+Cherries,36,fruit
+Clementine,39,fruit
+Coconut (Fresh),351,fruit
+Cranberries,15,fruit
+Cucumber,15,fruit
+Dates (Dried),227,fruit
+Figs (Fresh),209,fruit
+Grapefruit,25,fruit
+Kiwi,42,fruit
+Lemon,15,fruit
+Lime,9,fruit
+Lychee,36,fruit
+Mango,39,fruit
+Acorn squash,40,vegetables
+Artichoke,41,vegetables
+Asparagus,29,vegetables
+Beetroot,42,vegetables
+Broccoli,35,vegetables
+Brussels Sprout,51,vegetables
+Butternut squash,36,vegetables
+Cabbage,27,vegetables
+Carrot,10,vegetables
+Cauliflower,30,vegetables
+Celery,8,vegetables
+Chicory,11,vegetables
+Corn,54,vegetables
+Edamame,140,vegetables
+Green beans,25,vegetables
+Iceberg lettuce,10,vegetables
+Kale,30,vegetables
+Leek,20,vegetables
+Mushroom,8,vegetables
+Onion,43,vegetables
+Peas,70,vegetables
+Peppers (Red),21,vegetables
+Potato,97,vegetables
+Pumpkin,13,vegetables
+Radish,33,vegetables
+Romaine Lettuce,15,vegetables
+Spinach,24,vegetables
+Bean Sprouts,30,vegetables
+Turnips,23,vegetables
+Yam,153,vegetables
+Zucchini / Courgette,10,vegetables
+adzuki beans,146,grains_pulses
+Amaranth (dried),359,grains_pulses
+barley (dried),310,grains_pulses
+beluga lentils,94,grains_pulses
+black beans,120,grains_pulses
+black eyed peas,110,grains_pulses
+brown lentils,105,grains_pulses
+Brown rice,132,grains_pulses
+Buckwheat,75,grains_pulses
+bulgur,85,grains_pulses
+Chickpeas,128,grains_pulses
+corn,54,grains_pulses
+green lentils,105,grains_pulses
+Green peas,70,grains_pulses
+green split peas,122,grains_pulses
+large fava beans,124,grains_pulses
+millet,199,grains_pulses
+Oats (rolled),381,grains_pulses
+pinto beans,137,grains_pulses
+quinoa,111,grains_pulses
+red kidney beans,105,grains_pulses
+red split lentils,100,grains_pulses
+White rice,131,grains_pulses
+wild rice,150,grains_pulses
+Bacon (pork),240,meat
+Chicken Breast,148,meat
+Chicken Wings,110,meat
+Chicken Thighs,133,meat
+Chicken Eggs,155,meat
+Duck (no skin),195,meat
+Escargots,90,meat
+Lamb,122,meat
+Liver,119,meat
+Sausage (chicken),172,meat
+Sausage (turkey),196,meat
+Sausage (pork),318,meat
+Quail Eggs,158,meat
+Turkey (dark meat),184,meat
+Tukey (white meat),104,meat
+Venison,157,meat
+ahi tuna,120,fish
+albacore,128,fish
+catfish,95,fish
+caviar,250,fish
+crab,87,fish
+eel,184,fish
+flounder,91,fish
+grouper,92,fish
+herring,158,fish
+lobster,90,fish
+mussels,86,fish
+oysters,81,fish
+salmon,183,fish
+scallops,88,fish
+sea bass,97,fish
+shrimp,106,fish
+smelt,97,fish
+squid,92,fish
+tilapia,96,fish
+trout,148,fish
+whitefish,134,fish
+yellowfin tuna,108,fish
+Butter,716,dairy_eggs
+Buttermilk (1%),41,dairy_eggs
+Cheddar Cheese,403,dairy_eggs
+Cottage Cheese (1%),72,dairy_eggs
+Cream (heavy),347,dairy_eggs
+Cream Cheese,231,dairy_eggs
+Evaporated milk,142,dairy_eggs
+Ghee,899,dairy_eggs
+Goats Milk,71,dairy_eggs
+Ice Cream (vanilla),207,dairy_eggs
+Kefir,67,dairy_eggs
+Ricotta Cheese,174,dairy_eggs
+Skim Milk,38,dairy_eggs
+Sour cream,214,dairy_eggs
+Soy milk,46,dairy_eggs
+Swiss Cheese,380,dairy_eggs
+Yogurt whole milk,61,dairy_eggs
+Yogurt no fat,55,dairy_eggs
+Whole Milk,62,dairy_eggs
+Bagel,275,carbohydrates
+Biscuit,300,carbohydrates
+Corn tortilla,218,carbohydrates
+English Muffin,235,carbohydrates
+Flour tortilla,312,carbohydrates
+Pasta (cooked),158,carbohydrates
+Rye Bread,258,carbohydrates
+Sourdough Bread,266,carbohydrates
+Wheat Bread,313,carbohydrates
+Whole grain pasta (cooked),124,carbohydrates
+Carbonated Cola,37,drinks
+Coffee black,1,drinks
+Diet Cola,0,drinks
+Apple Juice (100%),49,drinks
+Ginger ale,34,drinks
+Hot Cocoa,81,drinks
+Hot Tea (no sugar),1,drinks
+Iced Tea (no sugar),1,drinks
+Lemonade,25,drinks
+Sweet Iced Tea,18,drinks
+Tonic Water,35,drinks
