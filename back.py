@@ -122,7 +122,7 @@ def all_category(cal):
 
         totalcal = fruitcal + vegecal + dairycal + drinkcal + fishcal + graincal + meatcal
 
-    return f"Your diet plan is:\nVegetables:{vegename} * 100g\nMeat:{meatname} * 100g\nFish:{fishname} * 100g\nDairy and eggs:{dairyname} * 100g\nGrain and pulses:{grainname} * 100g\nFruit:{fruitname} * 100g\nDrink:{drinkname} * 100ml\nYour calories goal is {cal}, this plan's total calories is {totalcal}"
+    return f"Your diet plan is:\nVegetables:{vegename} * 100g\nMeat:{meatname} * 100g\nFish:{fishname} * 100g\nDairy and eggs:{dairyname} * 100g\nGrain and pulses:{grainname} * 100g\nFruit:{fruitname} * 100g\nDrink:{drinkname} * 100ml\nYour calories goal is {cal}, this plan's total calories is {totalcal}."
 
 
 def main():
@@ -135,8 +135,7 @@ def main():
     weight = 52
     activitylevel = "level_2"
     goal = "Weight loss"
-    cal = float(get_daily_cal(age, gender, height,
-                weight, activitylevel, goal))
+    cal = float(get_daily_cal(age, gender, height, weight, activitylevel, goal))
     print(all_category(cal))
 
 
