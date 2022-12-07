@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, escape
 from back import get_daily_cal
 from back import all_category
 
@@ -10,7 +10,6 @@ def hello():
 
 @app.route('/', methods=["GET", "POST"])
 def features():
-    while request.method == "POST"
     if request.method == "POST":
         age = request.form["Age"]
         gender = request.form["Gender"]
@@ -21,7 +20,8 @@ def features():
         cal = float(get_daily_cal(age, gender, height, weight, activitylevel, goal))
 
         res = all_category(cal)
-        return render_template("results.html", response = res) 
+        result = str(escape(res)).replace('\n', '<br/>')
+        return render_template("results.html", response = result) 
     else:      
         return render_template("index.html")
 

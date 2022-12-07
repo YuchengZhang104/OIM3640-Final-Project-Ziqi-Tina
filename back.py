@@ -7,6 +7,9 @@ import csv
 # Get the Calorie with provided body facts
 
 def get_fitness_api(url):
+    """
+    Given a properly formatted URL, return a string containing the response to that request.
+    """
     conn = http.client.HTTPSConnection("fitness-calculator.p.rapidapi.com")
     headers = {
         'X-RapidAPI-Key': "e1b62cc7f9msh053d2e6f7ea766ap1e742djsnd1d93f380d2e",
@@ -20,11 +23,17 @@ def get_fitness_api(url):
 
 
 def str_dict(str):
+    """
+    Given a string, convert the string into dictionary.
+    """
     diction = json.loads(str)
     return diction
 
 
 def get_goal_cal(goal, diction):
+    """
+    Given a weight control goal and the dictionary, return the corresponding daily calories requirement to that goal.
+    """
     d = dict()
     d = diction
 
@@ -46,10 +55,14 @@ def get_goal_cal(goal, diction):
 
 
 def get_daily_cal(age, gender, height, weight, activitylevel, goal):
-    age = int(age)
+    """
+    Given the body facts including age, gender, height, weight, activitylevel, return a properly formatted url.
+    Then with the given weight control goal, return the daily calories requirement of this person with the input body facts and goal.
+    """
+    age = abs(int(age))
     gender = gender.lower()
-    height = int(height)
-    weight = int(weight)
+    height = abs(int(height))
+    weight = abs(int(weight))
     activitylevel = activitylevel.lower()
 
     url = f"/dailycalorie?age={age}&gender={gender}&height={height}&weight={weight}&activitylevel={activitylevel}"
@@ -65,6 +78,10 @@ def get_daily_cal(age, gender, height, weight, activitylevel, goal):
 
 
 def csv_read(category):
+    """
+    Given a category of the food, read its csv and convert it into dictionary with two fieldnames of 'food' and 'calories', 
+    each pair with a number index.
+    """
     with open(f'data/{category}.csv', mode='r', encoding='utf-8-sig') as csvfile:
         foodlistread = csv.DictReader(csvfile, fieldnames=['food', 'calories'])
         foodlist = {}
@@ -79,6 +96,9 @@ def csv_read(category):
 # print(res)
 
 def random_food(category):
+    """
+    Given a category of the food, randomly return an item in that category.
+    """
     d = dict()
     d = csv_read(category)
     choice = random.choice(list(d.items()))
@@ -89,6 +109,10 @@ def random_food(category):
 # print(res)
 
 def unpack(tuple):
+    """
+    Given a tuple (randomly returned item in previous function),
+    convert the tuple into dictionary that only contain the food pair that has its name and calories.
+    """
     (num, pair) = tuple
     return pair
 
@@ -97,6 +121,10 @@ def unpack(tuple):
 # print(res)
 
 def all_category(cal):
+    """
+    Given a daily calories requirement, return a randomly chose diet plan containing one food from each food category.
+    The generated diet plan will have a total calories that is no more or less than 50 calories of the calories requirement.
+    """
     totalcal = 0
     while abs(totalcal-cal) > 50:
         fruit = unpack(random_food("fruit"))
@@ -132,12 +160,12 @@ def all_category(cal):
 
         totalcal = fruitcal + vegecal + dairycal + drinkcal + fishcal + graincal + meatcal
 
-    return f"Your diet plan is:\nVegetables:{vegename} * 100g\nMeat:{meatname} * 100g\nFish:{fishname} * 100g\nDairy and eggs:{dairyname} * 100g\nGrain and pulses:{grainname} * 100g\nFruit:{fruitname} * 100g\nDrink:{drinkname} * 100ml\nYour calories goal is {cal}, this plan's total calories is {totalcal}."
+    return f"Your diet plan is:\nVegetables: {vegename} * 100g\nMeat: {meatname} * 100g\nFish: {fishname} * 100g\nDairy and eggs: {dairyname} * 100g\nGrain and pulses: {grainname} * 100g\nFruit: {fruitname} * 100g\nDrink: {drinkname} * 100ml\nYour calories goal is {cal}, this plan's total calories is {totalcal}.\nIf you want to generate another plan, please refresh this page."
 
 
 def main():
     """
-
+    Test all the functions here.
     """
     age = 21
     gender = "Female"

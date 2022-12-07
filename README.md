@@ -1,40 +1,86 @@
-# OIM3640-Final-Project-Ziqi-Tina
+# 🥑 EatMo吃啥 [Healthy Daily Random Diet Plan Generator]()
+## ⭐️ Author [Ziqi Zhou](https://github.com/LydiaQ1) and [Tina Zhang](https://github.com/YuchengZhang104)
 
-## The Big Idea
-### Project Overview:
-This project is about utilizing APIs to design a program that can help the users get recommendations on what to eat for their daily meals based on their dietary goals, the recommendation will not only make sure users can reach their eventual diet goals scientifically, but also have sufficient nutrition for healthy human needs. 
+<p align="center" >
+  <samp>
+    Trying to keep on a healthy diet ? 
+  <br/> Trying to get to a certain weight ? 
+    <br/>BUT DON'T KNOW WHAT TO EAT ???
+    <br/>EatMo Got This!
+  <br/>A randomized recommendation of daily diet plan customized for all goal above.
+  </samp>
+  <br/>
+  <br/>
+  <br/>
+</p>
 
-### Main Purpose:
-The program is a tool for users who intend to reach certain dietary goals or lose/gain weight. When we are on a diet, we often find ourselves struggling with deciding what to eat, for that we are not sure how many calories we have eaten. And sometimes when we eat less, we are not meeting the nutrition requirement. These can lead to failed diet and weight control, even unhealthy conditions, or is at least an annoying effort to come up with what to eat every day. To solve this daily pain, we want to create this program. 
-The users will be asked to input their current weight, age, height, gender, exercise frequency level, as well as the intended weight control goal, the program will calculate the daily calorie limit that the user needs to maintain in order to reach that goal. Then, the program will generate random food recommendations with quantity (ingredients) in sections of carbs, fibers, proteins, etc. that not only meet the calorie requirement, but also meet the requirements for basic healthy diet composition. If the user is not happy with the recommendation, they can always regenerate a new recommendation with another randomization. 
+<img src="https://media.tenor.com/images/df8c44a1d20ab367fdcb21880985fd33/tenor.gif" align="right"  width="30%"/>
 
-### Minimum and Stretch Goal
-A minimum viable product would be a food recommendation system that outputs randomized suggestions of food that meets the user's daily calorie requirement. A stretch on this project would be allowing recommendations to meet different dietary goals, for example, maintain weight or slight weight loss etc, as well as perform a better looking web app. A further stretch would be to allow users to input their allergies and dietary restrictions like vegan or gluten free, and then return the food accordingly.
+## <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/PusheenCompute.gif" width="70px" /> Our Goal
+This program aims to provide users with randomized healthy daily meal plan recommendations that satisfy their dietary goals. These recommendations will not only make sure users can reach their eventual diet goals scientifically, but also the users can have sufficient nutrition for healthy human needs. 
 
-## Learning Goals
-We will be employing the skills of basic calculation, randomization, conditional clauses, dictionary, WebApp development, and etc., we are looking forward to improving ourselves on these skills. Besides these essential skills, we also want to practice our critical thinking and problem solving skills, as we know that when software design comes to real life practice, there will be a lot more issues that are not expected or unable to be foreseen. The ability to adapt to different situations and solve problems is very important for programming. When the bug or issue comes up, we should be able to locate it and solve them by applying our knowledge. In our perspective, this skill of problem solving is the most important key to coding and both of us would learn a lot in practicing. Individually speaking, Tina would like to improve her skills on how to restrict users’ inputs in a designated format, and Ziqi would like to improve her coding abilities on html coding on web aesthetics. 
+## <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/Confused_Dog.gif" height="50px" /> Program Overview
+The program is presented in a website, users can simply inputing their age, gender, height, weight, activity level, and weight goal. As a result, the users can conveniently return a recommended list of food that covers  all 7 categories: fruits, vegetables, dairy eggs, drinks, fish, grains pluses, meat (all in a 100 grams or 100 milliliters unit). Since the  recommendation is generated randomly, if the users are not satisfied with the recommended items in the list, all they need to do is to just refresh the web page and a new list will be generated. 
 
-## Implementation Plan
-To enable our designed function, we will be utilizing two APIs, the first one is the [Fitness Calculator](https://rapidapi.com/malaaddincelik/api/fitness-calculator), and the second is the [NutritionNix](https://www.nutritionix.com/). The first API will allow us to input user body information and return with BMI, daily calories requirement on different weight control goals, etc. The demo is as below.
+We utilize API to get the information about the matched calories based on user provided age, gender, height, weight, and activity level. And we also use the data provided by MYPROTEIN's Food Calories Chart to create a set of csv files that contain the calories information (Kcal per 100g) about each food item across all 7 categories. 
 
-![This is an image](https://user-images.githubusercontent.com/112499147/201264770-7beb390b-1515-47e7-b9ae-c3f487782a90.png)
+## <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/pug_dance.gif" width="60px" /> User Handbook
+### Step 1
+Open VisualStudio Code, install [Flask](https://flask.palletsprojects.com/en/2.2.x/).
+### Step 2
+Download all files in this repository (entire data folder, back.py, front.py, index.html, results.html), open and save the files in VS Code.
+### Step 3
+Run front.py in VS Code, you should see this terminal:
+![This is an image](https://ibb.co/557nwKz)
+Once you see this, control(command) + right click on http://127.0.0.1:5000 to access the app website.
+### Step 4
+Opening up the website, you will see on the page that there are 6 parameters that await your INPUTS: Age (integer only), Gender ("female" or "male" in lowercase only), Height (integer only), Weight (integer only), Activity Level (select from drop-down list only), and Diet Goal (select from drop-down list only).
+![This is an image](https://ibb.co/LdXtLz3)
+### Step 5
+After you've inputed all information required on the page, please CLICK the dark pink button below "Generate your daily diet plan!".  You will then be directed to a new web page that shows the newly generated daily meal plan, a recommendation that is created based on your physical metrics and dietary goals.
+![This is an image](https://ibb.co/4J15DMb)
+### Step 6
+After you clicked the dark pink button "Generate your daily diet plan!",  you know will see this web page, and there you go with your daily meal plan that is customized using your physical metrics and dietary goals. If you do not like the food items in this meal plan, simply refresh the page, EatMo will automatically generate a new meal plan that is also randomized, and created based on your physical metrics and dietary goals.
+![This is an image](https://ibb.co/GvDxMXK)
 
-The second API is a database of food. It contains the nutrition facts of 790,041 grocery goods. By searching the food, it will return facts like calories, amount of carbohydrates, dietary fibers, fat etc. We are still finalizing our search for effective nutrition APIs and we might use another one if we find it better.
-We will ask the users to input their age, gender, weight, height, exercise level, and weight control goal, then by using the Fitness Calculator API, we will check the weight control goal in the returned calories requirements. With this returned daily calories requirement, we will then randomize a choice of food in each category of carbs, fibers, proteins, and etc. The sum of calories of these categories will add up to the daily calories requirement. In this way, we will make sure the user meets weight control goals, and also has a balanced diet with all categories. 
-With consideration of allergies and dietary restrictions, we will allow users to always regenerate a new set of recommendations to meet their preference. Of course, if we have time, we can try to include restrictions in the code and let users input restrictions.
+## <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/cool_duck.gif" width="60px" /> Parameters
+<img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/party_parrot.gif" height="35px" /> Here below are a detailed explanation about the parameters EatMo has used in its program code:
 
-## Project Schedule
-To develop this project, we plan to first come up with a general agenda and timeline about the project. Splitting the whole process into major two sections — first the back-end development and then the front-end web development. In the back-end development, we have two major functions that we need to develop. The first one is to fetch the according daily calories requirement with the help of API and users’ inputs. After this, we will design the function of randomization recommendations. We are anticipating the second part to take a longer time as the categorization of food in such a huge database might bring issues. 
-After developing the back-end, we will work on the front-end web app development. In this part, we will first work on enabling the app on the website by having all the user input labels and returning pages ready. After the basic function is met, we will then work on the aesthetic and UI of the website. We are planning on completing the back-end development before Thanksgiving, and work on the front-end after we come back.
+### Input:
+Age: 
+It should use to input the user’s age. It must be an integer. It cannot be negative or bigger than 80. If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is over 80, it will show as "Error".
+Gender:
+It should use to input the user’s gender. It can only be male or female in lowercase.
+Height:
+It should use to input the user’s height. It must be integer. It cannot be smaller than 130 or bigger than 230. The unit of weight is in cm.  If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is smaller than 130 or bigger than 230, it will show as "Error"
+Weight:
+It should use to input the user’s mass. It must be an integer. It cannot be smaller than 40 or bigger than 160. The unit of weight is in kg. If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is smaller than 40 or bigger than 160, it will show as "Error".
+Activity Level:
+There are 7 options:
+Sedentary: little or no exercise
+Exercise 1-3 times/week
+Exercise 4-5 times/week
+Daily exercise or intense exercise 3-4 times/week
+Intense exercise 6-7 times/week
+Very intense exercise daily, or physical job
+Goals:
+maintain weight
+Mild weight loss
+Weight loss
+Extreme weight loss
+Mild weight gain
+Weight gain
+Extreme weight gain
 
-## Collaboration Plan
-In this project, we will both work on the back-end and front-end development together, but in a micro-perspective, we will assign each small specific task to each person. For specific tasks that require coding, we will complete the code independently, and then combine the works with one another after discussion. And for errors and issues that occurred, we will first look through codes from our class and search online for explanation tutorials. If the issue still remains unresolved, we will consult with professor Li for advice. For each task, we will test the codes together to make sure the program runs smoothly with no errors neglected. As for software development methodology, we will adopt agile development. Since we are a small group, we are able to guarantee real-time communication which is key to maintain frequent incremental improvements in this methodology. Through iterations that contain small increments on the codes that control the program functionality and web aesthetics, the efficiency will be improved since the team will be able to locate and fix the errors in a timely manner.
+### Output:
+Vegetables: [item name] * 100g
+Meat: [item name] * 100g
+Fish: [item name] * 100g
+Dairy and eggs: [item name] * 100g
+Grain and pulses: [item name] * 100g
+Fruit: [item name] * 100g
+Drink: [item name] * 100ml
+Your calories goal is [number], this plan's total calories is [number].
 
-![This is an image](https://www.synopsys.com/blogs/software-security/wp-content/uploads/2017/03/agile-development.jpg)
-
-## Risks
-A risk that we might encounter during the project is the risk of API call limit, since we are only using a free API plan with restricted calls, it might return error if we have too many calls. What’s more, the API database of food is very large, and we will have the risk of returning foods that meet the nutrition goal, but are actually not healthy foods due to ways of cooking etc. Unforeseeable risks are always the largest difficulty of a project, just like in Assignment 3, we will encounter errors from time to time, and only when it really occurs, can we start to think about it and try to solve it. These unforeseeable errors may stall our progress as we cannot plan ahead to solve them. But it is also the unforeseeable issues that really trains our ability in problem solving.
-
-## Additional Course Content
-I think content on how to add in interesting functionalities that can improve the users’ experience and convenience on our website. We wish to establish a website where each function (button) is presented logically and conveniently. And to further improve our users’ experiences, we would also like to learn more interesting codes that can help with web aesthetics.
-
+---
+⭐️ From [Ziqi Zhou](https://github.com/LydiaQ1) and [Tina Zhang](https://github.com/YuchengZhang104)

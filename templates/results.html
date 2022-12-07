@@ -8,35 +8,36 @@
     <title>Your Daily Diet Plan</title>
     <style>
         body {
-            background-color: #fff0f6;
-            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://unsplash.com/photos/BeEnOzyIBsU/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjcwMzc0NzYw&force=true);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         h1 {
             text-align: center;
             font-family: Arial, sans-serif;
-            font-size: 3em;
+            font-size: 2em;
             color: #000000;
-            margin-top: 200px;
+            margin-top: 100px;
         }
 
-        p {
+        span {
+            display: block;
             text-align: center;
             font-family: Arial, sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             color: #000000;
+            line-height:1.5;
         }
     </style>
 </head>
 
 <body>
-    <h1>Your Daily Diet Plan</h1>
-    <p class="pink"> {{response}} </p>
-    <form action="" method="post">
-        <button onClick="window.location.reload();"> 
-            Generate Another Daily Diet Plan!
-        </button>
-      </form>
+    <h1>&#129361 EatThis!!! &#129361
+        <br>Your Daily Diet Plan</h1>
+    <span align="center"> {{ response | safe }} </span>
 </body>
 
 </html>
