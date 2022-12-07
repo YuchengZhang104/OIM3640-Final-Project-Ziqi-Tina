@@ -58,6 +58,7 @@ def get_daily_cal(age, gender, height, weight, activitylevel, goal):
     cal = get_goal_cal(goal, diction)
     return cal
 
+
 # print(get_daily_cal(21,"female",164,52,"level_1","Mild weight loss"))
 
 # Generate dietary suggestion according to the calories goal
@@ -73,6 +74,9 @@ def csv_read(category):
             idx = idx + 1
         return foodlist
 
+# chck = csv_read("fruit")
+# res = type(chck)
+# print(res)
 
 def random_food(category):
     d = dict()
@@ -80,22 +84,28 @@ def random_food(category):
     choice = random.choice(list(d.items()))
     return choice
 
+# chck2 = random_food("fruit")
+# res = type(chck2)
+# print(res)
 
 def unpack(tuple):
     (num, pair) = tuple
     return pair
 
+# chck3 = unpack(chck2)
+# res = type(chck3)
+# print(res)
 
 def all_category(cal):
     totalcal = 0
     while abs(totalcal-cal) > 50:
-        fruit = dict(unpack(random_food("fruit")))
-        vegetables = dict(unpack(random_food("vegetables")))
-        dairy_eggs = dict(unpack(random_food("dairy_eggs")))
-        drinks = dict(unpack(random_food("drinks")))
-        fish = dict(unpack(random_food("fish")))
-        grains_pulses = dict(unpack(random_food("grains_pulses")))
-        meat = dict(unpack(random_food("meat")))
+        fruit = unpack(random_food("fruit"))
+        vegetables = unpack(random_food("vegetables"))
+        dairy_eggs = unpack(random_food("dairy_eggs"))
+        drinks = unpack(random_food("drinks"))
+        fish = unpack(random_food("fish"))
+        grains_pulses = unpack(random_food("grains_pulses"))
+        meat = unpack(random_food("meat"))
 
         d = dict()
         d = fruit
@@ -137,6 +147,7 @@ def main():
     goal = "Weight loss"
     cal = float(get_daily_cal(age, gender, height, weight, activitylevel, goal))
     print(all_category(cal))
+
 
 
 if __name__ == '__main__':
