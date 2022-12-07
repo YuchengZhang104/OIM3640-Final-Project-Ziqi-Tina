@@ -14,8 +14,6 @@
   <br/>
 </p>
 
-<img src="https://media.tenor.com/images/df8c44a1d20ab367fdcb21880985fd33/tenor.gif" align="right"  width="30%"/>
-
 ## <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/PusheenCompute.gif" width="70px" /> Our Goal
 This program aims to provide users with randomized healthy daily meal plan recommendations that satisfy their dietary goals. These recommendations will not only make sure users can reach their eventual diet goals scientifically, but also the users can have sufficient nutrition for healthy human needs. 
 
