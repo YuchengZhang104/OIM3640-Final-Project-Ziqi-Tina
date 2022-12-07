@@ -46,69 +46,44 @@ After you clicked the dark pink button "Generate your daily diet plan!",  you kn
 
 ### Input:
 Age: 
-
 It should use to input the user’s age. It must be an integer. It cannot be negative or bigger than 80. If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is over 80, it will show as "Error".
 
 Gender:
-
 It should use to input the user’s gender. It can only be male or female in lowercase.
 
 Height:
-
 It should use to input the user’s height. It must be integer. It cannot be smaller than 130 or bigger than 230. The unit of weight is in cm.  If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is smaller than 130 or bigger than 230, it will show as "Error".
 
 Weight:
-
 It should use to input the user’s mass. It must be an integer. It cannot be smaller than 40 or bigger than 160. The unit of weight is in kg. If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is smaller than 40 or bigger than 160, it will show as "Error".
 
 Activity Level:
-
 There are 7 options:
-
 Sedentary: little or no exercise
-
 Exercise 1-3 times/week
-
 Exercise 4-5 times/week
-
 Daily exercise or intense exercise 3-4 times/week
-
 Intense exercise 6-7 times/week
-
 Very intense exercise daily, or physical job
 
 Goals:
-
 maintain weight
-
 Mild weight loss
-
 Weight loss
-
 Extreme weight loss
-
 Mild weight gain
-
 Weight gain
-
 Extreme weight gain
 
 
 ### Output:
 Vegetables: [item name] * 100g
-
 Meat: [item name] * 100g
-
 Fish: [item name] * 100g
-
 Dairy and eggs: [item name] * 100g
-
 Grain and pulses: [item name] * 100g
-
 Fruit: [item name] * 100g
-
 Drink: [item name] * 100ml
-
 Your calories goal is [number], this plan's total calories is [number].
 
 ---
