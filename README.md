@@ -58,21 +58,35 @@ Weight:
 It should use to input the user’s mass. It must be an integer. It cannot be smaller than 40 or bigger than 160. The unit of weight is in kg. If the inputed number is negative, the program will run automatically its absolute value; if the inputed number is not an integer, the input column will show as "Please Input Valid Value"; if the inputed number is smaller than 40 or bigger than 160, it will show as "Error".
 
 Activity Level:
+
 There are 7 options:
-Sedentary: little or no exercise
-Exercise 1-3 times/week
-Exercise 4-5 times/week
-Daily exercise or intense exercise 3-4 times/week
-Intense exercise 6-7 times/week
+
+Sedentary: little or no exercise,
+
+Exercise 1-3 times/week,
+
+Exercise 4-5 times/week,
+
+Daily exercise or intense exercise 3-4 times/week,
+
+Intense exercise 6-7 times/week,
+
 Very intense exercise daily, or physical job
 
 Goals:
-maintain weight
-Mild weight loss
-Weight loss
-Extreme weight loss
-Mild weight gain
-Weight gain
+
+maintain weight,
+
+Mild weight loss,
+
+Weight loss,
+
+Extreme weight loss,
+
+Mild weight gain,
+
+Weight gain,
+
 Extreme weight gain
 
 
