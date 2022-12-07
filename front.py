@@ -10,6 +10,9 @@ def hello():
 
 @app.route('/', methods=["GET", "POST"])
 def features():
+    """
+    If inputs properly inputed, return the result page of html, else, return the input page.
+    """
     if request.method == "POST":
         age = request.form["Age"]
         gender = request.form["Gender"]
