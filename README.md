@@ -1,4 +1,4 @@
-# 🥑 EatMo吃啥 [Healthy Daily Random Diet Plan Generator]()
+# 🥑 EatMo吃啥 [Healthy Daily Random Diet Plan Generator](https://sites.google.com/babson.edu/eatmo/home)
 ## ⭐️ Author [Ziqi Zhou](https://github.com/LydiaQ1) and [Tina Zhang](https://github.com/YuchengZhang104)
 
 <p align="center" >
